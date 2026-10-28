@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F6E6B4">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Mimo bolos caseiros · Passo Fundo, RS. Bolo de casa, feito com carinho. Pronta entrega ter & qui, encomendas pelo WhatsApp.">
+<title>Mimo · Bolos caseiros em Passo Fundo</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/logo-mimo.jpg">
+
+<!-- compartilhamento (WhatsApp, Instagram, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Mimo bolos caseiros">
+<meta property="og:title" content="Mimo · Bolos caseiros em Passo Fundo">
+<meta property="og:description" content="Bolo de casa, feito com carinho. Pronta entrega ter & qui, das 11h às 19h. Encomendas pelo WhatsApp.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vulcão de cenoura com cobertura de chocolate e granulado dourado">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Mimo bolos caseiros",
+  "description": "Bolos caseiros feitos com carinho em Passo Fundo, RS.",
+  "image": "assets/og-image.jpg",
+  "logo": "assets/logo-mimo.jpg",
+  "telephone": "+55 54 9678-0338",
+  "priceRange": "R$ 15 – R$ 45",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Fagundes dos Reis, 220 - Centro",
+    "addressLocality": "Passo Fundo",
+    "addressRegion": "RS",
+    "postalCode": "99010-070",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday", "Thursday"],
+    "opens": "11:00",
+    "closes": "19:00"
+  }],
+  "sameAs": ["https://instagram.com/mimocakes.pf"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Dancing+Script:wght@500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --butter:#F6E6B4;
+  --cream:#FDF6E3;
+  --paper:#FFFCF5;
+  --brown:#8B5E3C;
+  --cocoa:#4A2C1A;
+  --text:#5A3E2B;
+  --muted:#7A5E48;
+  --line:#EADFC4;
+  --tape:#DFC59C;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"DM Sans",system-ui,sans-serif;
+  --script:"Dancing Script",cursive;
+  --wrap:1640px;
+  --gutter:clamp(24px,4.5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (min-width:1600px){html{font-size:106.25%}}
+@media (min-width:1880px){html{font-size:112.5%}}
+body{margin:0;background:var(--cream);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);color:var(--cocoa);font-weight:600;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:2px solid var(--brown);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:96px 0}
+.head{text-align:center;max-width:600px;margin:0 auto 48px}
+.section .kicker{margin:0}
+.kicker{font-family:var(--script);font-size:1.85rem;color:var(--brown);line-height:1}
+.head h2{font-size:clamp(2.3rem,4.4vw,3.2rem);line-height:1.1;margin-top:4px}
+.head p{margin-top:14px;color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--brown);color:#FFF8EA;font-weight:600;font-size:1.05rem;text-decoration:none;padding:17px 30px;border-radius:999px;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+@media (hover:hover){.btn:hover{background:#7A5032;transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(74,44,26,.5)}}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn--light{background:var(--butter);color:var(--cocoa)}
+.btn--light:hover{background:#FBEFC8}
+
+/* header + hero */
+.hero{background:var(--butter);position:relative}
+/* header: solto sobre o hero, vira uma pílula translúcida ao rolar */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;padding:0 16px;pointer-events:none}
+.nav{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;max-width:var(--wrap);margin:0 auto;padding:28px var(--gutter) 0;border:1px solid transparent;border-radius:999px;transition:max-width .45s cubic-bezier(.2,.7,.2,1),margin .45s cubic-bezier(.2,.7,.2,1),padding .45s cubic-bezier(.2,.7,.2,1),background-color .35s ease,border-color .35s ease,box-shadow .35s ease}
+.topbar.scrolled .nav{max-width:760px;margin-top:12px;padding:8px 8px 8px 10px;background:rgba(253,246,227,.94);border-color:rgba(139,94,60,.14);box-shadow:0 12px 32px -16px rgba(74,44,26,.4)}
+@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  .topbar.scrolled .nav{background:rgba(253,246,227,.62);-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%)}
+}
+.brand .badge{transition:width .35s ease,height .35s ease}
+.topbar.scrolled .brand .badge{width:38px;height:38px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--script);font-size:1.7rem;color:var(--cocoa)}
+.badge{border-radius:50%;overflow:hidden;flex:none;box-shadow:0 0 0 2px #F3D88A}
+.badge img{width:100%;height:100%;object-fit:cover;transform:scale(1.04)}
+.brand .badge{width:46px;height:46px}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;text-decoration:none;font-weight:500;color:var(--cocoa);padding:9px 16px;border-radius:999px;transition:background-color .2s ease,color .2s ease}
+@media (hover:hover){.nav ul a:hover{background:rgba(139,94,60,.1)}}
+.nav ul a.active{background:var(--brown);color:#FFF8EA}
+
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:clamp(40px,4vw,80px);padding:clamp(120px,10vw,160px) 0 clamp(72px,6vw,110px)}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brown)}
+.eyebrow svg{width:14px;height:14px}
+.hero h1{font-size:clamp(3rem,5.4vw,6.4rem);line-height:1.08;margin-top:18px}
+.hero h1 em{font-family:var(--script);font-style:normal;font-weight:500;color:var(--brown);font-size:1.08em}
+.hero-lead{font-size:1.2rem;max-width:30ch;margin-top:22px}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:20px 26px;margin-top:34px}
+.link{color:var(--brown);font-weight:600;text-underline-offset:4px}
+.link:hover{color:var(--cocoa)}
+
+.hero-art{position:relative;width:min(100%,640px);aspect-ratio:1;justify-self:end}
+/* margarida animada */
+.daisy{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.daisy-glow{fill:#FDF3DA;opacity:.7}
+.daisy-spin{transform-box:view-box;transform-origin:200px 200px;animation:spin 70s linear infinite}
+.petal{transform-box:view-box;transform-origin:200px 200px;animation:bloom .9s cubic-bezier(.34,1.45,.5,1) both;animation-delay:calc(var(--i) * 55ms + .15s)}
+.petal ellipse{fill:#FFFDF6;stroke:#E6CF9E;stroke-width:1.4}
+#petals-back .petal ellipse{fill:#FBF1D8}
+.petal path{fill:none;stroke:#EADBB8;stroke-width:1.2;stroke-linecap:round}
+.daisy-ring{transform-box:view-box;transform-origin:200px 200px;animation:ring 1s ease .9s both,spin 40s linear infinite reverse}
+.daisy-logo{position:absolute;left:50%;top:50%;width:48%;aspect-ratio:1;margin:-24% 0 0 -24%;box-shadow:0 0 0 4px #F3D88A,0 18px 34px -14px rgba(74,44,26,.5);animation:pop .8s cubic-bezier(.34,1.56,.64,1) .95s both,bob 6s ease-in-out 2s infinite}
+.deco{position:absolute;color:var(--brown);animation:fadein .6s ease 1.4s both}
+.deco--flower{left:0;top:6%;width:42px;height:42px;animation:fadein .6s ease 1.4s both,spin 18s linear infinite}
+.deco--flower2{right:2%;bottom:4%;width:30px;height:30px;animation:fadein .6s ease 1.6s both,spin 14s linear infinite reverse}
+.deco--heart{left:6%;bottom:12%;width:22px;height:22px;opacity:.8;animation:fadein .6s ease 1.5s both,float 5s ease-in-out 2s infinite}
+.deco--heart2{right:4%;top:10%;width:18px;height:18px;opacity:.6;animation:fadein .6s ease 1.7s both,float 6s ease-in-out 2.4s infinite}
+@keyframes bloom{from{transform:rotate(var(--a)) scale(0)}to{transform:rotate(var(--a)) scale(1)}}
+@keyframes pop{from{opacity:0;transform:scale(.3) rotate(-25deg)}to{opacity:1;transform:none}}
+@keyframes ring{from{opacity:0}to{opacity:1}}
+@keyframes fadein{from{opacity:0}}
+@keyframes float{50%{transform:translateY(-10px) rotate(-8deg)}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.ribbon{background:var(--brown);color:#FFF8EA;text-align:center;padding:16px 24px;display:flex;justify-content:center;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ribbon span:first-child{font-family:var(--script);font-size:1.5rem;line-height:1}
+.ribbon span:last-child{font-weight:600}
+
+/* cardápio */
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,2.4vw,44px)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+@media (hover:hover){.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(74,44,26,.35)}}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+@media (hover:hover){.card:hover .card-img img{transform:scale(1.04)}}
+.tag{position:absolute;z-index:2;top:16px;left:16px;display:flex;align-items:center;gap:8px;background:var(--cream);color:var(--cocoa);font-size:.8rem;font-weight:600;padding:6px 14px;border-radius:999px;box-shadow:0 0 0 2px #fff}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:#E3B23C}
+.card-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.45rem;line-height:1.2}
+.card p{font-size:.97rem;color:var(--muted);margin-top:8px}
+.price{font-family:var(--serif);font-weight:600;color:var(--brown);font-size:1.4rem;margin-top:auto;padding-top:22px}
+
+/* encomendas */
+.order{background:var(--butter)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.2vw,40px);counter-reset:s}
+.step{background:var(--cream);border-radius:22px;padding:30px 28px;display:flex;gap:20px}
+.step-n{flex:none;width:58px;height:58px;border-radius:50%;border:1.5px dashed var(--brown);display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:1.5rem;color:var(--brown)}
+.step h3{font-size:1.35rem;line-height:1.3}
+.step p{font-size:.97rem;margin-top:6px}
+.center{text-align:center;margin-top:44px}
+
+/* por que */
+.why{background:var(--paper)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
+.why-icon{width:104px;height:104px;border-radius:50%;background:var(--butter);display:grid;place-items:center;margin:0 auto 22px;color:var(--brown)}
+.why-icon svg{width:34px;height:34px}
+.why h3{font-size:1.45rem}
+.why-grid p{color:var(--muted);margin:12px auto 0;max-width:330px;font-size:.98rem}
+
+/* depoimentos */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,2.6vw,48px);padding-top:12px}
+.note{position:relative;margin:0;background:var(--paper);padding:34px 30px 30px;box-shadow:0 14px 26px -18px rgba(74,44,26,.35);
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,#EDE3CF 37px 38px);background-position:0 22px}
+.note:nth-child(1){transform:rotate(-1.4deg)}
+.note:nth-child(2){transform:rotate(.9deg)}
+.note:nth-child(3){transform:rotate(-.5deg)}
+.note::before{content:"";position:absolute;top:-14px;left:50%;width:100px;height:30px;background:var(--tape);opacity:.9;transform:translateX(-50%) rotate(-3deg)}
+.note:nth-child(2)::before{transform:translateX(-50%) rotate(4deg)}
+.note blockquote{margin:0;font-family:var(--script);font-size:1.55rem;line-height:38px;color:var(--cocoa)}
+.note figcaption{margin-top:8px;font-size:.92rem;font-weight:600;color:var(--brown);line-height:38px}
+
+/* horários */
+.visit{background:var(--butter)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(40px,5vw,96px);align-items:center}
+.visit h2{font-size:clamp(2.3rem,4.4vw,3.2rem);margin:4px 0 24px}
+.hours{background:var(--cream);border-radius:20px;padding:6px 24px;margin:0}
+.hours div{display:flex;justify-content:space-between;padding:16px 0}
+.hours div+div{border-top:1.5px dashed var(--line)}
+.hours dt{font-weight:600;color:var(--cocoa)}
+.hours dd{margin:0}
+.addr{display:flex;gap:12px;margin-top:22px}
+.addr svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--brown)}
+.addr strong{color:var(--cocoa)}
+.small{font-size:.92rem;margin-top:18px}
+.map{border:2px dashed #C9A97C;border-radius:26px;background:var(--cream);padding:8px}
+.map iframe{display:block;width:100%;height:clamp(380px,30vw,480px);border:0;border-radius:19px}
+.addr a{text-underline-offset:3px}
+.addr a:hover{color:var(--brown)}
+
+/* cta final */
+.final{background:var(--brown);color:#FFF8EA;text-align:center;padding:110px 0}
+.final .flower{display:block;width:42px;height:42px;margin:0 auto 18px;animation:spin 18s linear infinite}
+.final h2{color:#FFF8EA;font-size:clamp(2.4rem,9vw,5rem);line-height:1.05}
+.final h2 svg{display:inline-block;width:.7em;height:.7em;margin-left:.25em;vertical-align:-.04em;color:var(--butter)}
+.final p{font-size:1.2rem;max-width:440px;margin:22px auto 30px;opacity:.92}
+
+/* footer */
+footer{text-align:center;padding:56px 24px 72px}
+footer .badge{display:block;width:136px;height:136px;margin:0 auto 26px;box-shadow:0 0 0 3px #F3D88A}
+.social{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 30px}
+.social a{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:1.08rem;text-decoration:none;color:var(--brown)}
+.social a:hover{color:var(--cocoa);text-decoration:underline;text-underline-offset:4px}
+.social svg{width:19px;height:19px}
+footer small{display:block;margin-top:20px;font-size:.9rem;color:var(--muted)}
+
+.fab{position:fixed;right:calc(22px + env(safe-area-inset-right));bottom:calc(22px + env(safe-area-inset-bottom));z-index:20;width:60px;height:60px;border-radius:50%;background:var(--brown);color:#FFF8EA;display:grid;place-items:center;box-shadow:0 0 0 3px #fff,0 12px 26px -8px rgba(74,44,26,.55);transition:transform .2s ease}
+@media (hover:hover){.fab:hover{transform:scale(1.07)}}
+.fab svg{width:26px;height:26px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;padding:104px 0 64px;gap:48px}
+  .hero-art{width:min(100%,440px);justify-self:center}
+  .menu-grid,.steps,.notes{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr;gap:48px}
+  .visit-grid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .section{padding:72px 0}
+  .topbar{padding:0 10px}
+  .nav{padding:18px 6px 0}
+  .topbar.scrolled .nav{margin-top:10px;padding:6px}
+  .nav ul{gap:2px;font-size:.92rem}
+  .nav ul a{padding:8px 11px}
+  .brand-name{display:none}
+  .menu-grid,.steps,.notes{grid-template-columns:1fr}
+  .notes{gap:40px}
+  .btn{padding:16px 24px;font-size:1rem}
+  .final{padding:84px 0}
+  .fab{width:54px;height:54px;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom))}
+  .map iframe{height:300px}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.2-4.1A8.5 8.5 0 1 1 8 19.6z"/><path d="M12 15.6s-3.4-2.1-3.4-4.1a1.8 1.8 0 0 1 3.4-.8 1.8 1.8 0 0 1 3.4.8c0 2-3.4 4.1-3.4 4.1z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+  <symbol id="i-flower" viewBox="0 0 40 40"><g fill="#fff" stroke="#E2C99B" stroke-width="1"><ellipse cx="20" cy="9" rx="4.4" ry="8"/><ellipse cx="20" cy="31" rx="4.4" ry="8"/><ellipse cx="9" cy="20" rx="8" ry="4.4"/><ellipse cx="31" cy="20" rx="8" ry="4.4"/><ellipse cx="12.2" cy="12.2" rx="4.4" ry="8" transform="rotate(-45 12.2 12.2)"/><ellipse cx="27.8" cy="27.8" rx="4.4" ry="8" transform="rotate(-45 27.8 27.8)"/><ellipse cx="27.8" cy="12.2" rx="4.4" ry="8" transform="rotate(45 27.8 12.2)"/><ellipse cx="12.2" cy="27.8" rx="4.4" ry="8" transform="rotate(45 12.2 27.8)"/></g><circle cx="20" cy="20" r="5.5" fill="#F1B92F"/></symbol>
+</svg>
+
+<div class="topbar" id="topbar">
+  <nav class="nav" aria-label="Principal">
+    <a class="brand" href="#inicio" aria-label="Mimo bolos caseiros, início">
+      <span class="badge"><img src="assets/logo-mimo.jpg" alt="" width="480" height="480"></span><span class="brand-name">mimo</span>
+    </a>
+    <ul>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#encomendas">Encomendas</a></li>
+      <li><a href="#local">Local</a></li>
+    </ul>
+  </nav>
+</div>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid" id="topo">
+      <div>
+        <p class="eyebrow"><svg><use href="#i-heart"/></svg>Bolos caseiros · Passo Fundo, RS</p>
+        <h1>Seu momento<br> mais <em>doce</em><br> começa aqui</h1>
+        <p class="hero-lead">Bolo de casa, feito com carinho, pra você dividir (ou não) com quem ama.</p>
+        <div class="hero-ctas">
+          <a class="btn js-wa" href="#" data-msg="Oi! Vim pelo site e quero pedir um bolo da Mimo 💛"><svg><use href="#i-wa"/></svg>Peça o seu pelo WhatsApp</a>
+          <a class="link" href="#cardapio">Ver o cardápio</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg class="daisy" viewBox="0 0 400 400" aria-hidden="true">
+          <circle class="daisy-glow" cx="200" cy="200" r="150"/>
+          <g class="daisy-spin">
+            <g id="petals-back"></g>
+            <g id="petals"></g>
+          </g>
+          <circle class="daisy-ring" cx="200" cy="200" r="104" fill="none" stroke="#C9A97C" stroke-width="1.6" stroke-dasharray="4 6"/>
+        </svg>
+        <span class="badge daisy-logo"><img src="assets/logo-mimo.jpg" alt="Mimo bolos caseiros" width="480" height="480" fetchpriority="high"></span>
+        <svg class="deco deco--flower" aria-hidden="true"><use href="#i-flower"/></svg>
+        <svg class="deco deco--flower2" aria-hidden="true"><use href="#i-flower"/></svg>
+        <svg class="deco deco--heart" aria-hidden="true"><use href="#i-heart"/></svg>
+        <svg class="deco deco--heart2" aria-hidden="true"><use href="#i-heart"/></svg>
+      </div>
+    </div>
+  </div>
+  <p class="ribbon"><span>Pronta entrega</span><span>ter &amp; qui · 11h às 19h</span></p>
+</header>
+
+<main>
+  <section class="section" id="cardapio">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="kicker">feitos hoje</p>
+        <h2>Cardápio</h2>
+        <p>Os sabores com selo estão na pronta entrega de hoje. Os outros, é só encomendar.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="card rv">
+          <div class="card-img"><span class="tag">Pronta entrega</span><img src="assets/bolo-chocolate-dourado.jpg" alt="Vulcão de cenoura com cobertura de chocolate e granulado dourado" width="800" height="1067" loading="lazy" decoding="async"></div>
+          <div class="card-body"><h3>Vulcão de cenoura</h3><p>Massa fofinha de cenoura, cobertura cremosa de chocolate e um brilho dourado por cima.</p><p class="price">R$ 45,00</p></div>
+        </article>
+        <article class="card rv">
+          <div class="card-img"><span class="tag">Pronta entrega</span><img src="assets/bolo-cremoso-coco.jpg" alt="Vulcão de ninho com cobertura cremosa de leite Ninho" width="800" height="1067" loading="lazy" decoding="async" style="object-position:50% 70%"></div>
+          <div class="card-body"><h3>Vulcão de ninho</h3><p>Massa fofinha e uma cobertura generosa e cremosa de leite Ninho, daquele jeitinho de vó.</p><p class="price">R$ 45,00</p></div>
+        </article>
+        <article class="card rv">
+          <div class="card-img"><img src="assets/granulado-colorido.jpg" alt="Fatia de bolo com cobertura branca e granulado colorido na caixinha" width="800" height="1067" loading="lazy" decoding="async" style="object-position:50% 40%"></div>
+          <div class="card-body"><h3>Granulado colorido</h3><p>Cara de festa de criança: cobertura branquinha e muita cor.</p><p class="price">R$ 15,00</p></div>
+        </article>
+        <article class="card rv">
+          <div class="card-img"><span class="tag">Pronta entrega</span><img src="assets/fatia-caixinha.jpg" alt="Fatia de bolo de cenoura com cobertura de chocolate na caixinha, com colher" width="800" height="1067" loading="lazy" decoding="async" style="object-position:50% 45%"></div>
+          <div class="card-body"><h3>Cenoura com cobertura de chocolate</h3><p>Uma fatia caprichada de bolo de cenoura com cobertura de chocolate, pronta pra acompanhar o seu café.</p><p class="price">R$ 15,00</p></div>
+        </article>
+        <article class="card rv">
+          <div class="card-img"><img src="assets/douradinho.jpg" alt="Caixinhas Mimo com bolo de cenoura com brigadeiro e granulado dourado" width="800" height="1067" loading="lazy" decoding="async" style="object-position:50% 55%"></div>
+          <div class="card-body"><h3>Cenoura com brigadeiro</h3><p>Bolo de cenoura na caixinha com cobertura de brigadeiro e granulado dourado. Ótimo pra presentear.</p><p class="price">R$ 15,00</p></div>
+        </article>
+        <article class="card rv">
+          <div class="card-img"><img src="assets/coco-caixinha.jpg" alt="Caixinhas Mimo com bolo de leite Ninho e cobertura cremosa de leite Ninho" width="800" height="1067" loading="lazy" decoding="async" style="object-position:50% 50%"></div>
+          <div class="card-body"><h3>Leite Ninho com leite Ninho</h3><p>Bolo de leite Ninho com cobertura cremosa de leite Ninho.</p><p class="price">R$ 15,00</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section order" id="encomendas">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="kicker">pra datas especiais</p>
+        <h2>Encomende o seu bolo</h2>
+        <p>Aniversário, café com as amigas ou só porque sim. É simples assim:</p>
+      </div>
+      <ol class="steps" style="list-style:none;margin:0;padding:0">
+        <li class="step rv"><span class="step-n">1</span><div><h3>Escolha o sabor</h3><p>Dá uma olhada no cardápio e escolhe o que tem a cara da sua festa.</p></div></li>
+        <li class="step rv"><span class="step-n">2</span><div><h3>Combine pelo WhatsApp</h3><p>Conta pra gente a data, o tamanho e os detalhes. A gente responde rapidinho.</p></div></li>
+        <li class="step rv"><span class="step-n">3</span><div><h3>Retire e aproveite</h3><p>Seu bolo fica prontinho, embalado com carinho, esperando por você.</p></div></li>
+      </ol>
+      <div class="center rv"><a class="btn js-wa" href="#" data-msg="Oi! Quero encomendar um bolo da Mimo 🎂"><svg><use href="#i-wa"/></svg>Encomendar pelo WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="section why">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="kicker">com carinho</p>
+        <h2>Por que a Mimo</h2>
+      </div>
+      <div class="why-grid">
+        <div class="rv">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9v11h13V9"/><path d="M12 17s-2.6-1.6-2.6-3.2a1.4 1.4 0 0 1 2.6-.7 1.4 1.4 0 0 1 2.6.7C14.6 15.4 12 17 12 17z"/></svg></div>
+          <h3>Feito em casa</h3>
+          <p>Receitas de família, assadas em fornadas pequenas, como bolo de casa tem que ser.</p>
+        </div>
+        <div class="rv">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8"/><path d="M12 12c0-3.5-2.5-6-7-6 0 3.5 2.5 6 7 6z"/><path d="M12 12c0-3 2-5.5 6.5-5.5 0 3-2 5.5-6.5 5.5z"/></svg></div>
+          <h3>Ingredientes de verdade</h3>
+          <p>Ovos, manteiga, leite e chocolate de verdade. Sem atalho, sem gosto de pacote.</p>
+        </div>
+        <div class="rv">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M4 9l2-4h12l2 4"/><circle cx="12" cy="14.5" r="2.2"/></svg></div>
+          <h3>Embalagem caprichada</h3>
+          <p>Caixinha com adesivo e margarida: já chega pronta pra presentear alguém especial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="kicker">bilhetinhos</p>
+        <h2>Quem provou, conta</h2>
+      </div>
+      <div class="notes">
+        <figure class="note rv"><blockquote>“Só peçam! Uma delícia.”</blockquote><figcaption>— Felipe Bombonatto, Passo Fundo</figcaption></figure>
+        <figure class="note rv"><blockquote>“O bolo mais caprichado de Passo Fundo!”</blockquote><figcaption>— Arthur Majolo, Passo Fundo</figcaption></figure>
+        <figure class="note rv"><blockquote>“Viciado na Mimo!”</blockquote><figcaption>— Tom Bortolon, Passo Fundo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visit" id="local">
+    <div class="wrap visit-grid">
+      <div class="rv">
+        <p class="kicker">vem buscar</p>
+        <h2>Horários e local</h2>
+        <dl class="hours">
+          <div><dt>Terça-feira</dt><dd>11h às 19h</dd></div>
+          <div><dt>Quinta-feira</dt><dd>11h às 19h</dd></div>
+        </dl>
+        <p class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span><strong>Passo Fundo, RS</strong><br><a href="https://maps.google.com/?q=R.+Fagundes+dos+Reis,+220+-+Centro,+Passo+Fundo+-+RS,+99010-070" target="_blank" rel="noopener">R. Fagundes dos Reis, 220 — Centro</a></span></p>
+        <p class="small">Encomendas: é só chamar no WhatsApp a qualquer dia.</p>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa: R. Fagundes dos Reis, 220 - Centro, Passo Fundo - RS" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.1915174096102!2d-52.40561562364407!3d-28.262209050938434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2bf81c391a18d%3A0x623691c403f38824!2sR.%20Fagundes%20dos%20Reis%2C%20220%20-%20Centro%2C%20Passo%20Fundo%20-%20RS%2C%2099010-070!5e0!3m2!1spt-BR!2sbr!4v1793190879502!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap rv">
+      <svg class="flower" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-flower"/></svg>
+      <h2>Adoce seu dia <svg aria-hidden="true"><use href="#i-heart"/></svg></h2>
+      <p>Chama a gente no WhatsApp e garanta o seu antes que acabe.</p>
+      <a class="btn btn--light js-wa" href="#" data-msg="Oi! Quero garantir o meu bolo da Mimo 💛"><svg><use href="#i-wa"/></svg>Peça o seu pelo WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="badge"><img src="assets/logo-mimo.jpg" alt="Mimo bolos caseiros" width="480" height="480" loading="lazy" decoding="async"></span>
+  <div class="social">
+    <a href="https://instagram.com/mimocakes.pf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>@mimocakes.pf</a>
+    <a class="js-wa" href="#" data-msg="Oi! Vim pelo site da Mimo 💛"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3.5 20.5l1.2-4.1A8.5 8.5 0 1 1 8 19.6z"/></svg>WhatsApp</a>
+  </div>
+  <small>Mimo bolos caseiros · Passo Fundo, RS</small>
+</footer>
+
+<a class="fab js-wa" href="#" data-msg="Oi! Vim pelo site da Mimo 💛" aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+// ▼ Coloque aqui o número do WhatsApp (DDI + DDD + número, só dígitos). Ex.: 5554999999999
+const WHATSAPP = "555496780338";
+
+document.querySelectorAll(".js-wa").forEach(a => {
+  a.href = "https://wa.me/" + WHATSAPP.replace(/\D/g, "") + "?text=" + encodeURIComponent(a.dataset.msg || "");
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+// pétalas da margarida do hero (duas camadas, a de trás deslocada meia pétala)
+(() => {
+  const petal = '<ellipse cx="200" cy="88" rx="27" ry="82"/><path d="M200 30v95"/>';
+  const draw = (id, n, offset, delay) => {
+    let s = "";
+    for (let i = 0; i < n; i++) {
+      const a = (360 / n) * i + offset;
+      s += '<g class="petal" style="--a:' + a + 'deg;--i:' + (i + delay) + ';transform:rotate(' + a + 'deg)">' + petal + "</g>";
+    }
+    document.getElementById(id).innerHTML = s;
+  };
+  draw("petals-back", 14, 360 / 28, 0);
+  draw("petals", 14, 0, 4);
+})();
+
+// header: vira pílula translúcida assim que a página sai do topo
+(() => {
+  const bar = document.getElementById("topbar");
+  let ticking = false;
+  const update = () => { bar.classList.toggle("scrolled", window.scrollY > 24); ticking = false; };
+  window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
+
+// marca no menu a seção que está na tela
+if ("IntersectionObserver" in window) {
+  const links = [...document.querySelectorAll(".nav ul a")];
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    links.forEach(a => {
+      const on = a.getAttribute("href") === "#" + e.target.id;
+      a.classList.toggle("active", on);
+      on ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current");
+    });
+  }), { rootMargin: "-45% 0px -50% 0px" });
+  ["inicio", ...links.map(a => a.getAttribute("href").slice(1))].forEach(id => spy.observe(document.getElementById(id)));
+}
+
+// entrada suave das seções
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".rv").forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
+}
+</script>
+</body>
+</html>
